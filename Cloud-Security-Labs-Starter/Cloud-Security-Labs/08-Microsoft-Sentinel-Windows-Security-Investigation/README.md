@@ -1,91 +1,67 @@
 # Investigate Windows Security Events with Microsoft Sentinel
 
-## Overview
-
-This hands-on lab walks through the configuration of Microsoft Sentinel to monitor and investigate security events on a Windows VM. You'll deploy Sentinel, configure connectors, simulate suspicious activity, and perform incident investigations.
-
----
-
-## Learning Objectives
-
-- 🛠️ Deploy Microsoft Sentinel and enable it on a Log Analytics workspace
-- 🔗 Add and configure the **Windows Security Events** solution
-- 📡 Collect Windows security event logs using data connectors
-- 🔍 Enable and tune analytics rules to detect suspicious behavior
-- ⚠️ Simulate security events and use the Sentinel investigation graph
+## 🛡️ Overview
+This lab demonstrates how to deploy and use Microsoft Sentinel — a cloud-native SIEM and SOAR solution — to detect, investigate, and respond to simulated Windows security threats. You'll configure Sentinel, ingest logs, simulate suspicious behavior, and use investigation tools to analyze incidents.
 
 ---
 
-## Tools and Services Used
+## 🎯 Objectives
 
-- Microsoft Sentinel (SIEM)
-- Azure Log Analytics
-- Windows Virtual Machine (Audit and Event Logs)
-- Kusto Query Language (KQL)
-- Azure Resource Manager
+- Deploy Microsoft Sentinel on a Log Analytics Workspace
+- Install the Windows Security Events solution
+- Configure data connectors and analytics rules
+- Enable auditing policies on a Windows VM
+- Simulate real-world security incidents (e.g., hidden tasks, brute-force attacks)
+- Investigate and triage incidents using Sentinel
 
 ---
 
-## Lab Steps
+## 🧰 Technologies Used
+
+- Microsoft Azure
+- Microsoft Sentinel
+- Windows Virtual Machine
+- Log Analytics Workspace
+- Registry Editor, Group Policy Editor, Task Scheduler
+- PsExec (Sysinternals)
+
+---
+
+## 🧪 Steps Performed
 
 ### 1. Deploy Microsoft Sentinel
-- Navigate to Microsoft Sentinel > Select a workspace > Enable Sentinel
+- Enabled Microsoft Sentinel on an existing Log Analytics workspace.
 
-### 2. Add the Windows Security Events Solution
-- Go to Content Hub in Sentinel
-- Search for and install **Windows Security Events**
+### 2. Add Security Solutions
+- Installed the **Windows Security Events** solution via the Content Hub.
 
-### 3. Configure the Data Connector
-- Navigate to **Data connectors**
-- Select Windows Security Events > Connect
-- Link the existing Windows VM for log forwarding
+### 3. Configure Data Connectors
+- Set up **Windows Security Events via AMA** connector.
+- Created a **Data Collection Rule** to ingest logs from a provisioned VM.
 
 ### 4. Configure Analytics Rules
-- Enable:
+- Enabled rules for:
   - **Scheduled Task Hide**
   - **Excessive Windows Logon Failures**
-- Adjust each rule:
-  - Run every 5 minutes
-  - Match events from the last 5 minutes or 1 day as appropriate
+- Adjusted rule frequency and lookup window for timely detection.
 
-### 5. Modify the Windows VM Audit Policy
-- Enable success auditing for Registry object access:
-  - `Advanced Audit Policy Configuration > Audit Policies > Object Access > Audit Registry`
+### 5. Audit & Simulate Security Events
+- Enabled object access auditing via **Group Policy**.
+- Configured registry auditing for scheduled task access.
+- Ran **Unprotect-User** scheduled task and hid it using `PsExec`.
+- Verified that password was brute-forced using the malicious task.
 
-- Enable auditing for registry key:
-  - `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule`
-
-### 6. Simulate Attacks
-- Run these PowerShell commands:
-```powershell
-C:\Scripts\PsExec64.exe -accepteula -i -s cmd.exe
-REG DELETE "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Unprotect-User" /v SD /f
-```
-
-### 7. Investigate in Microsoft Sentinel
-- Use the **investigation graph** to analyze incidents and map attack paths
+### 6. Investigate Incidents
+- Viewed and investigated incidents in Microsoft Sentinel using:
+  - **Investigation Graph**
+  - **Entity timeline**
+  - **Alert correlation**
 
 ---
 
-## Optional Enhancements
-
-- Integrate with Microsoft Defender for Endpoint for advanced signals
-- Create automated playbooks for incident response
-- Connect Sentinel to external data sources like AWS GuardDuty
+## 🖼️ Screenshots
+> *(Optional: Include screenshots or GIFs showing the Sentinel dashboard, alerts, audit logs, and the investigation graph.)*
 
 ---
 
-## Screenshots
 
-- [x] Sentinel Dashboard
-- [x] Analytics Rules Configuration
-- [x] Event Logs in Log Analytics
-- [x] Investigation Graph Output
-
----
-
-## Author
-
-**Kairu Mambo**  
-Cloud Security Engineer (Aspiring)  
-[GitHub Portfolio](https://github.com/) | Charlotte, NC
