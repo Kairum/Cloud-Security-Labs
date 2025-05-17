@@ -9,7 +9,8 @@
 
    ![Image](https://github.com/user-attachments/assets/1c186f4d-8de5-4580-a443-94d7915bd347)
 
- 4. Use PowerShell to create and read secrets in Key Vault
+ 4. Use PowerShell to create and read secrets in Key Vault:
+    
     a. Log in to Azure using managed identity:
     ![Image](https://github.com/user-attachments/assets/75822937-8142-4dfc-98ab-f38498a4c644)
 
