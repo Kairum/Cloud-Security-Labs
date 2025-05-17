@@ -1,6 +1,5 @@
 1. Connect to the Jump server virtual machine
 ![image](https://github.com/user-attachments/assets/3ee68623-6d30-4266-aee1-3ad27400a119)
-![Image](https://github.com/user-attachments/assets/6aa25f50-309d-4925-8f01-757b79eee699)
 
 ![Image](https://github.com/user-attachments/assets/620ab80d-6f69-46a7-9d4a-acc0e6f5594f)
 
