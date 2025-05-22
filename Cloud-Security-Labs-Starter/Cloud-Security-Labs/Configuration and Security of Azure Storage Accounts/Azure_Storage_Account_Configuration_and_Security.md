@@ -2,7 +2,7 @@
 # Configuration and Security of Azure Storage Accounts
 
 ## Introduction
-This hands-on lab provides some experience with configuring and securing an Azure storage account. We log in to the Azure portal and create a storage account, and then get familiar with the configuration options for it, including replication options, access tiers, and secure transfers. We RDP into a Windows VM and use Microsoft Azure Storage Explorer to connect to the storage account. We use Blob storage and attempt to upload and retrieve data from the blob. Using the Azure portal, we use access policies and shared access signatures to both permit access to the storage account and deny access to blob data.
+This hands-on lab provides some experience with configuring and securing an Azure storage account. We log in to the Azure portal and create a storage account, and then get familiar with the configuration options for it, including replication options, access tiers, and secure transfers. We RDP into a Windows VM and use Microsoft Azure Storage Explorer to connect to the storage account. We use Blob storage and attempt to upload and retrieve data from the blob.
 
 ## Solution
 
