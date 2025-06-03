@@ -22,13 +22,14 @@
 ![Image](https://github.com/user-attachments/assets/37729b11-bf1c-41d0-8a53-6743d00ec41d)
 
 8. Configure Private Link for Azure SQL
+
    a. Disable Public Access:
 ![Image](https://github.com/user-attachments/assets/44124731-3766-4b45-95a1-1b174c40f363)
 
    b. Private Endpoint Created
 ![Image](https://github.com/user-attachments/assets/9c4b58c6-eb8f-448d-95b4-1d574a32b7d8)
 
-9. Create new test item to ensure web app still works
+10. Create new test item to ensure web app still works
 ![Image](https://github.com/user-attachments/assets/de9f7f46-b478-4f72-a479-daf02547015f)
 
 ![Image](https://github.com/user-attachments/assets/e3cf5336-ebb3-40c8-b676-53fec8bbf5ba)
