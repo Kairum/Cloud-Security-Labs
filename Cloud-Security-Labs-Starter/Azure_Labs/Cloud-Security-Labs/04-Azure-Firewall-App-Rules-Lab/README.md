@@ -11,7 +11,7 @@ Your employer has deployed a secure multi-server architecture consisting of:
 - A **work server** with no internet access, only reachable via the jump server.
 - An **Azure Firewall** that restricts internet access for the work server.
 
-You are tasked with enabling secure access to **www.google.com** from the work server by configuring an **application rule** in Azure Firewall.
+I am tasked with enabling secure access to **www.google.com** from the work server by configuring an **application rule** in Azure Firewall.
 
 ## Key Tasks
 
