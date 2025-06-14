@@ -4,7 +4,7 @@
 This hands-on lab demonstrates how to securely access secrets in Azure Key Vault from a virtual machine using managed identities and Azure Private Link. It simulates a scenario where hardcoded secrets in PowerShell scripts are replaced with secure programmatic access via Key Vault.
 
 ## Scenario
-You are a security engineer tasked with improving the security of automation scripts on a VM that currently uses plain-text secrets. The goal is to:
+I am a security engineer tasked with improving the security of automation scripts on a VM that currently uses plain-text secrets. The goal is to:
 - Store secrets in Azure Key Vault
 - Use a managed identity for secure authentication
 - Ensure communication to Key Vault is private using Azure Private Link
@@ -36,4 +36,4 @@ Get-AzKeyVaultSecret -VaultName $kv.VaultName -name MySecret -AsPlainText
 This lab teaches secure authentication techniques in Azure, secret management using Key Vault, and the use of private endpoints for improved security posture.
 
 ---
-*This lab was completed as part of my transition into a Cloud Security Engineer role.*
+
