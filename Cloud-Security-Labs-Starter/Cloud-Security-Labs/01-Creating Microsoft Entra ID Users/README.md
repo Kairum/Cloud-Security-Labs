@@ -63,9 +63,3 @@ This hands-on lab demonstrates how to manage user identities securely in Microso
 - Implement Conditional Access policies for MFA enforcement
 - Connect Entra ID logs to a SIEM for real-time monitoring
 
-## Author
-
-**Kairu Mambo**  
-Cloud Security Engineer (Aspiring)  
-[GitHub Portfolio](https://github.com/) | Charlotte, NC  
-
