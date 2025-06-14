@@ -2,13 +2,13 @@
 # Enabling Always Encrypted in Azure SQL
 
 ## Introduction
-You are assuming the role of a cloud data engineer. You’ve been asked to ensure customer data is always encrypted at rest. Staff such as administrators and backup operators should not have access to customer data, even when using tools like SQL Server Management Studio. The unencrypted data should only be available to the application. In this hands-on lab, you will create an Azure SQL database and an Azure key vault, encrypt data using SQL Server Management Studio (SSMS), and view encryption results.
+I am assuming the role of a cloud data engineer. I have been asked to ensure customer data is always encrypted at rest. Staff such as administrators and backup operators should not have access to customer data, even when using tools like SQL Server Management Studio. The unencrypted data should only be available to the application. In this hands-on lab, I will create an Azure SQL database and an Azure key vault, encrypt data using SQL Server Management Studio (SSMS), and view encryption results.
 
 ## Solution
 
 ### Log in to the Azure portal using the credentials provided on the lab page.
 
-### Note: To complete this lab, you will need to use a remote desktop client.
+### Note: To complete this lab, I will need to use a remote desktop client.
 - Windows: Microsoft Remote Desktop on Windows 10
 - MacOS: Microsoft Remote Desktop
 - Linux: Remmina
