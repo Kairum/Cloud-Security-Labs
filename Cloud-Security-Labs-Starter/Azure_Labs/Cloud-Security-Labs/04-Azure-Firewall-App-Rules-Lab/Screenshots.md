@@ -23,10 +23,10 @@
 
 ![Image](https://github.com/user-attachments/assets/012b1d02-c052-4da9-85fb-bdce32b572ac)
 
-  **-Application Rule Created:**
+  - Application Rule Created:
 
   ![Image](https://github.com/user-attachments/assets/c6d47e7d-dfa1-495c-8b82-1c40c22c2346)
-  
+
 
 **5. Verify access to Google through Work WM:**
 
