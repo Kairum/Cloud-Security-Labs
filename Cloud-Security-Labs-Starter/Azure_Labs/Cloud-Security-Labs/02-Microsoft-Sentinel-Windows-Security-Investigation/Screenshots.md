@@ -77,7 +77,7 @@
 **10. Investigate the Incidents in the Azure Portal**
 
 
-    ![Image](https://github.com/user-attachments/assets/00725db2-cc46-4d04-abd6-ad23cf1f13a2)
+  ![Image](https://github.com/user-attachments/assets/102d41a3-f3f8-4642-a811-d15d55b7d893)
 
 
-    ![Image](https://github.com/user-attachments/assets/d82289db-1fd7-4c73-890a-e3da0006ce2a)
+  ![Image](https://github.com/user-attachments/assets/d6273cc9-9915-49be-ba83-2597404d8d7e)
