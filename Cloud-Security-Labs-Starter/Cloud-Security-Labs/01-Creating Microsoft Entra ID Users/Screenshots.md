@@ -26,6 +26,7 @@
 
 ![Image](https://github.com/user-attachments/assets/adbd39ca-45e4-4892-94e7-ea064ce5e45c)
 
+
 ![Image](https://github.com/user-attachments/assets/16224308-7450-410f-a007-5b382ceb690a)
 
 **7.) Selecting the option to delete testuser1**
@@ -34,12 +35,14 @@
 
 
 **8.) Displaying that testuser1 has been deleted**
+
 ![Image](https://github.com/user-attachments/assets/aa4fb930-27cb-43af-afdb-91717bc308c3)
 
 
 **9.) Selecting the option to permanently delete testuser1**
 
 ![Image](https://github.com/user-attachments/assets/38d626a0-6bb1-450a-8bd1-385bcc66d70d)
+
 
 ![Image](https://github.com/user-attachments/assets/d202b33e-e555-425b-8c47-6dd140fac1c8)
 
