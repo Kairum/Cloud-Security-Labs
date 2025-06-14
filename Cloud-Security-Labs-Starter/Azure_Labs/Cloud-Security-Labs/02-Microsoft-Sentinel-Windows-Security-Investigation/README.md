@@ -1,7 +1,7 @@
 # Investigate Windows Security Events with Microsoft Sentinel
 
 ## 🛡️ Overview
-This lab demonstrates how to deploy and use Microsoft Sentinel — a cloud-native SIEM and SOAR solution — to detect, investigate, and respond to simulated Windows security threats. You'll configure Sentinel, ingest logs, simulate suspicious behavior, and use investigation tools to analyze incidents.
+This lab demonstrates how to deploy and use Microsoft Sentinel,a cloud-native SIEM and SOAR solution, to detect, investigate, and respond to simulated Windows security threats. I will configure Sentinel, ingest logs, simulate suspicious behavior, and use investigation tools to analyze incidents.
 
 ---
 
@@ -59,9 +59,6 @@ This lab demonstrates how to deploy and use Microsoft Sentinel — a cloud-nativ
 
 ---
 
-## 🖼️ Screenshots
-> *(Optional: Include screenshots or GIFs showing the Sentinel dashboard, alerts, audit logs, and the investigation graph.)*
 
----
 
 

@@ -1,3 +1,0 @@
-# PowerShell script to simulate attacks
-
-# Example: Run PsExec and delete registry key...
