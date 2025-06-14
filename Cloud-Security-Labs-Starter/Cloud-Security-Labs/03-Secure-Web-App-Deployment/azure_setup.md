@@ -1,1 +1,0 @@
-# Azure Setup Instructions
