@@ -1,7 +1,7 @@
 **1. Associate the managed identity with the VM**
 
    ![Image](https://github.com/user-attachments/assets/0451d8f9-7d24-40bd-ae27-6bb2f7669a53)
-   
+
 
 **2. Create a new Key Vault:**
 
@@ -19,16 +19,21 @@
  **4. Use PowerShell to create and read secrets in Key Vault:**
     
     - Log in to Azure using managed identity:
-    ![Image](https://github.com/user-attachments/assets/75822937-8142-4dfc-98ab-f38498a4c644)
+
+   ![Image](https://github.com/user-attachments/assets/de3cfc57-2401-49c5-adfa-f8a4efc98707)
 
     - Capture a secure string to store:
-    ![Image](https://github.com/user-attachments/assets/7b8c8c19-b965-42d1-bec4-06e2513041cd)
+
+   ![Image](https://github.com/user-attachments/assets/e9854c56-5df2-4908-8233-7b9b8c980b40)
 
     - Get the Key Vault and save it to a variable called kv, then Check the key is returned:
-    ![Image](https://github.com/user-attachments/assets/79a892a0-57b6-4799-8326-4741ee40d759)
+    
+   ![Image](https://github.com/user-attachments/assets/a07c200e-ee29-4c69-a892-5d2f283af47c)
 
     - Create a Key Vault secret:
-    ![Image](https://github.com/user-attachments/assets/f30fad10-3e0e-4cca-b515-cfd6ef36b9b5)
+
+   ![Image](https://github.com/user-attachments/assets/c61c8230-ed45-4d08-ae43-68f14e504599)
 
     - Retrieve a secret from Key Vault (as plain text):
-    ![Image](https://github.com/user-attachments/assets/6c51a1dc-c1af-4b01-88b7-0a6cdc3ee28c)
+
+   ![Image](https://github.com/user-attachments/assets/6c51a1dc-c1af-4b01-88b7-0a6cdc3ee28c)
