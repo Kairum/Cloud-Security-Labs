@@ -2,7 +2,7 @@
 
 ## 📘 Introduction
 
-This hands-on lab demonstrates how Azure Policy can be used by security engineers to enforce compliance standards across Azure resources. You will learn how to assign policies that:
+This hands-on lab demonstrates how Azure Policy can be used by security engineers to enforce compliance standards across Azure resources. I will learn how to assign policies that:
 - Require cost allocation tags on resource groups.
 - Ensure newly deployed resources inherit those tags automatically.
 
@@ -75,4 +75,4 @@ These tagging strategies are critical for financial accountability, governance, 
 
 ## 🏁 Conclusion
 
-This lab showcased how Azure Policies enable cloud security and compliance teams to enforce governance rules at scale. You learned how to block non-compliant resources, automatically inherit critical metadata, and remediate legacy infrastructure with minimal manual effort.
+This lab showcased how Azure Policies enable cloud security and compliance teams to enforce governance rules at scale. I learned how to block non-compliant resources, automatically inherit critical metadata, and remediate legacy infrastructure with minimal manual effort.
