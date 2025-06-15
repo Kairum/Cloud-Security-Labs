@@ -3,7 +3,7 @@
 
 ## Overview
 
-This lab demonstrates how to configure a **Service Principal** to authenticate with **Azure Container Registry (ACR)** for secure, automated access. You'll verify push/pull permissions, work with container images, and run a containerized ASP.NET app—all without exposing credentials in a production pipeline.
+This lab demonstrates how to configure a **Service Principal** to authenticate with **Azure Container Registry (ACR)** for secure, automated access. I will verify push/pull permissions, work with container images, and run a containerized ASP.NET app—all without exposing credentials in a production pipeline.
 
 ---
 
@@ -115,4 +115,3 @@ docker run -p 8080:8080 -d <REGISTRY_LOGIN_SERVER>/aspnetapp:latest
 ✅ Verified permissions for container push and pull  
 ✅ Deployed and tested a container image via Docker
 
-This setup reflects a real-world pattern for secure, automated container workflows in Azure.
