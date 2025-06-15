@@ -2,7 +2,7 @@
 # Monitor Storage for Security Events with Azure Monitor
 
 ## Introduction
-This lab demonstrates how to monitor Azure Blob Storage for security events using Azure Monitor Logs. You will enable diagnostic logging on a storage account and configure alerts for anonymous access attempts.
+This lab demonstrates how to monitor Azure Blob Storage for security events using Azure Monitor Logs. I will enable diagnostic logging on a storage account and configure alerts for anonymous access attempts.
 
 ## Lab Objectives
 - Enable diagnostic logging for Blob storage to a Log Analytics workspace
