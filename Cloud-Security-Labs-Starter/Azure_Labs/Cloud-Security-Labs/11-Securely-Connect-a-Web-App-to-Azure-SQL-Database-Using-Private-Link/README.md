@@ -70,6 +70,6 @@ This lab demonstrates how to securely connect an Azure Web App to an Azure SQL D
 
 ---
 
-## Final Notes
+## Conclusion
 
 This lab showcases how to implement secure, production-grade architecture in Azure by combining platform-as-a-service (PaaS) resources with advanced network isolation.
