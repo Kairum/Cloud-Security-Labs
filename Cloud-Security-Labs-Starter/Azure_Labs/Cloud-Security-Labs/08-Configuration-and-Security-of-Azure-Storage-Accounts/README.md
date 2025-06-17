@@ -1,44 +1,112 @@
+# 🔐 Configuration and Security of Azure Storage Accounts
 
-# Configuration and Security of Azure Storage Accounts
+## 📘 Introduction
+This hands-on lab provides a comprehensive walkthrough for configuring and securing an Azure Storage Account. I will learn how to:
 
-## Introduction
-This hands-on lab provides experience with configuring and securing an Azure storage account. I will log in to the Azure portal and create a storage account, and then get familiar with the configuration options for it, including replication options, access tiers, and secure transfers. I then RDP into a Windows VM and use Microsoft Azure Storage Explorer to connect to the storage account. I will use Blob storage and attempt to upload and retrieve data from the blob.
+- Create and configure a storage account
+- Secure access using shared access signatures (SAS), access keys, and stored access policies
+- Upload and retrieve data using Azure Storage Explorer
+- Rotate keys and revoke access
+- Integrate security best practices
 
-## Solution
+This lab simulates real-world scenarios involving storage security using Microsoft Azure services.
 
-### Create and Configure a Storage Account
-1. In the Azure portal, click Create.
-2. Search and select "Storage account". Click Create.
-3. Enter a globally unique name (e.g., acgstorage2).
-4. Set Redundancy to Locally-redundant storage (LRS).
-5. Leave other settings default, click Next: Advanced, then Review, then Create.
-6. Click Go to resource.
+---
 
-### Log In to the VM with RDP
-1. Connect using public IP and credentials from lab page.
-2. Click Continue on certificate warning.
+## 🧰 Prerequisites
 
-### Open Azure Storage Explorer, Connect to Azure Account, and Upload Images
-1. Launch Microsoft Azure Storage Explorer.
-2. Sign in with Azure using lab credentials.
-3. Under Account Management, click Open Explorer.
-4. Expand subscription, storage account, then Blob Containers.
-5. Right-click Blob Containers > Create Blob Container named "images".
-6. Select "images" container, then Upload > Upload Files.
-7. Browse to C:\images, select images, and Upload.
+- An active Azure subscription (or lab-provided credentials)
+- Remote desktop client:
+  - Windows: Microsoft Remote Desktop
+  - macOS: Microsoft Remote Desktop
+  - Linux: Remmina
+- Microsoft Azure Storage Explorer installed on the VM
 
-### Enable Security on the Storage Account
-#### Identify Access Keys
-1. In Azure portal, go to storage account > Access keys.
-2. Show and copy key1.
+---
 
-#### Use Access Keys in Storage Explorer
-1. In Azure Storage Explorer, click socket icon.
-2. Select "Storage account or service" > Account name and key.
-3. Enter details, paste key1, and connect.
-4. Upload/download images.
+## 🛠️ Lab Steps
 
-#### Revoke Access by Rotating Keys
-1. In Azure portal, rotate key1 under Access keys.
-2. In Storage Explorer, refresh connection.
-3. Authentication Error should appear, confirming revoked access.
+### 1. Create and Configure an Azure Storage Account
+
+- In the Azure Portal:
+  - Navigate to **Create a resource** → **Storage account**
+  - Set a globally unique name (e.g., `acgstorage2`)
+  - Choose **Locally-redundant storage (LRS)**
+  - Accept defaults → **Review + Create** → **Go to resource**
+
+---
+
+### 2. Connect to a Windows VM via RDP
+
+- Use provided public IP and credentials to RDP into the lab virtual machine
+- Accept certificate warnings as needed
+
+---
+
+### 3. Upload Files via Azure Storage Explorer
+
+- Sign in to Azure through Storage Explorer
+- Create a blob container named `images`
+- Upload image files from `C:\images` into the blob container
+
+---
+
+### 4. Secure the Storage Account
+
+#### 🔑 Access Keys
+
+- In Azure Portal → Storage Account → **Access keys**
+- Copy `key1`, then:
+  - In Storage Explorer: connect using **Account name and key**
+  - Upload/download files
+- Rotate `key1` in Azure and observe authentication failure in Explorer
+
+---
+
+#### 🔗 Shared Access Signatures (SAS)
+
+##### SAS #1: Blob Service + Read/List (Service-level only)
+
+- Generate SAS → Connect in Storage Explorer
+- Observe read/list limitations (container access denied)
+
+##### SAS #2: Blob Service + Container Access
+
+- Modify SAS to include **Container + Object**
+- Attempt upload → Expect **Insufficient credentials** error
+
+##### SAS #3: Blob Service + Write/Add/Create
+
+- Update permissions and generate new SAS
+- Upload should now succeed
+
+##### ❌ Revoke Access
+
+- Rotate storage account access key to invalidate all existing SAS tokens
+- Observe authentication errors across all SAS connections
+
+---
+
+### 5. Stored Access Policy (SAP)
+
+- In Azure Portal → Container → Access policy:
+  - Create `Test-SAP` with full permissions and valid time window
+- In Storage Explorer:
+  - Generate SAS token using `Test-SAP`
+  - Upload and delete files to validate policy
+- Delete SAP in portal to revoke access
+- Refresh connection in Explorer → Access should now be denied
+
+---
+
+## ✅ Conclusion
+
+- Created and secured an Azure Storage Account
+- Explored multiple authentication methods (Access Keys, SAS, SAP)
+- Validated permissions and access revocation in real time
+
+This lab reinforces critical concepts in **Azure Storage security**, preparing you for real-world scenarios and certifications such as the **AZ-500**.
+
+---
+
+
