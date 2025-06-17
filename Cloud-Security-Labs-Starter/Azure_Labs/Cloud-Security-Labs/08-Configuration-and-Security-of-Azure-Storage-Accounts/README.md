@@ -105,8 +105,6 @@ This lab simulates real-world scenarios involving storage security using Microso
 - Explored multiple authentication methods (Access Keys, SAS, SAP)
 - Validated permissions and access revocation in real time
 
-This lab reinforces critical concepts in **Azure Storage security**, preparing you for real-world scenarios and certifications such as the **AZ-500**.
-
 ---
 
 
